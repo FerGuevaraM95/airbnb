@@ -3,6 +3,10 @@
     --primary: #da595e;
     --dark: #484848;
     --white: #fff;
+    --lodging: #275154;
+    --concert: #da595e;
+    --class: #598dda;
+    --walk: #940ad4;
 }
 
 html {
@@ -24,6 +28,25 @@ h2 {
 
 h3 {
     font-size: 1.8rem;
+}
+
+
+/** COLORS **/
+
+.lodging {
+    color: var(--lodging);
+}
+
+.concert {
+    color: var(--concert);
+}
+
+.class {
+    color: var(--class);
+}
+
+.walk {
+    color: var(--walk);
 }
 
 
@@ -103,4 +126,34 @@ form input[type="submit"] {
     background-color: var(--primary);
     color: var(--white);
     cursor: pointer;
+}
+
+
+/** MAIN CONTENT **/
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+}
+
+.card img {
+    width: 100%;
+}
+
+.info .category {
+    font-size: .9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.info .title {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.info .price {
+    font-size: .9rem;
+    color: var(--dark);
 }
