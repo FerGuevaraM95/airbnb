@@ -215,3 +215,25 @@ form input[type="submit"] {
         color: var(--dark);
     }
 }
+
+
+/** DESTINATIONS **/
+
+.destinations .cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.destinations .card {
+    position: relative;
+}
+
+.destinations .info {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.destinations .info .title {
+    font-size: 1.8rem;
+    color: var(--white);
+}
